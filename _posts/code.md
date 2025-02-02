@@ -68,33 +68,3 @@ Which displays:
 By default, it does not display line numbers. If you want to display line numbers for every code block, you can set `kramdown.syntax_highlighter_opts.block.line_numbers` to true in your `_config.yml` file.
 
 If you want to display line numbers for a specific code block, all you have to do is wrap your code in a liquid tag:
-
-{% raw %}
-{% highlight c++ linenos %}  code code code  {% endhighlight %}
-{% endraw %}
-
-The keyword `linenos` triggers display of line numbers.
-Produces something like this:
-
-{% highlight c++ linenos %}
-
-int main(int argc, char const \*argv[])
-{
-string myString;
-
-    cout << "input a string: ";
-    getline(cin, myString);
-    int length = myString.length();
-
-    char charArray = new char * [length];
-
-    charArray = myString;
-    for(int i = 0; i < length; ++i){
-        cout << charArray[i] << " ";
-    }
-
-    return 0;
-
-}
-
-{% endhighlight %}
