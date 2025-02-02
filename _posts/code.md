@@ -70,7 +70,7 @@ By default, it does not display line numbers. If you want to display line number
 If you want to display line numbers for a specific code block, all you have to do is wrap your code in a liquid tag:
 
 {% raw %}
-{% highlight c++ linenos %} <br/> code code code <br/> {% endhighlight %}
+{% highlight c++ linenos %}  code code code  {% endhighlight %}
 {% endraw %}
 
 The keyword `linenos` triggers display of line numbers.

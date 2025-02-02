@@ -84,7 +84,7 @@ openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Mark Greenway's Blog # blog_name will be displayed in your blog page
+blog_name: "Mark Greenway's Blog" # blog_name will be displayed in your blog page
 blog_description: personal blog
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
@@ -141,11 +141,11 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  news:
-    defaults:
-      layout: post
-    output: true
-    permalink: /:collection/:title/
+  # news:
+  #   defaults:
+  #     layout: post
+  #   output: true
+  #   permalink: /:collection/:title/
   projects:
     output: true
     permalink: /:collection/:title/
